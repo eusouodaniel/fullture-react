@@ -1,12 +1,11 @@
 import axios from "axios";
 
-export const buscaCep = async () => {
-    let cep = document.getElementById("cep").value;
-    let response = await axios.get(`https://viacep.com.br/ws/${cep}/json`)
+export const buscaCep = async (cep, setRua, setBairro) => {
+    await axios.get(`https://viacep.com.br/ws/${cep}/json`)
         .then((response) => {
-            return response.data;
+            setRua(response.data.logradouro)
+            setBairro(response.data.bairro)
         }).catch((error) => {
             console.log(error.code)
-        });
-    console.log(response)
+        });    
 }

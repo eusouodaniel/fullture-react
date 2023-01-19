@@ -4,7 +4,8 @@ export default function InputText(props) {
             type={props.type} 
             name={props.inputName} 
             placeholder={props.placeholder} 
-            id={props.id} 
+            id={props.id}
+            value={props.value}
         />
     )
 }
