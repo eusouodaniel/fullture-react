@@ -1,10 +1,10 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Button from "../components/Button";
-import InputText from "../components/Input";
-import { buscaCep } from "../api/cep.js";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
+import Button from "../../components/button/Button";
+import InputText from "../../components/input/Input";
+import { buscaCep } from "../../api/cep.js";
 
 export default function Home() {
     const [rua, setRua] = useState([]);

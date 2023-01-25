@@ -1,9 +1,9 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Button from "../components/Button";
 import { useState, useEffect } from "react";
-import { getPokemon } from "../api/pokemon"
 import { Link } from "react-router-dom";
+import { getPokemon } from "../../api/pokemon";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
+import Button from "../../components/button/Button";
 
 export default function Contact() {
     const [pokemons, setPokemons] = useState([]);
@@ -20,7 +20,7 @@ export default function Contact() {
                 return ( 
                     <div>
                         <p>{pokemon.name}</p>
-                        <a href={pokemon.url} target="_blank">Clique aqui para saber mais</a>
+                        <a href={pokemon.url} target="_blank" rel="noreferrer">Clique aqui para saber mais</a>
                     </div>
                 )
             })}

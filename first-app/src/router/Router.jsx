@@ -1,7 +1,7 @@
-import Home from "../pages/Home"
-import Contact from "../pages/Contact"
-import NotFound from "../pages/errors/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "../pages/home/Home";
+import Contact from "../pages/contact/Contact";
+import NotFound from "../pages/errors/NotFound";
 
 export default function Router() {
     return (

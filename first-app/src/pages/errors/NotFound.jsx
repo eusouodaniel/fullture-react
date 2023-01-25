@@ -1,6 +1,6 @@
-import Footer from "../../components/Footer"
-import Button from "../../components/Button";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import Footer from "../../components/footer/Footer";
+import Button from "../../components/button/Button";
 
 export default function NotFound() {
     return (
