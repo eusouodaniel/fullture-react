@@ -8,6 +8,7 @@ export function getArtists(setArtists) {
     axios.get(`${BASE_URL}/2.0/?method=artist.search&artist=brown
                 &api_key=${API_KEY}&format=${FORMAT}&page=1`)
             .then(response => {
+                console.log(response.data.results.artistmatches.artist)
                 setArtists(response.data.results.artistmatches.artist)
             })
 }
