@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react"
-import { getArtists, getAlbums, getTracks } from '../../services/api/lastfm';
+import { 
+    getArtists, 
+    getAlbums, 
+    getTracks 
+} from '../../services/api/lastfm';
 import { MainGrid, Container } from "./CardStyle";
 
 export function CardArtist() {

@@ -2,28 +2,39 @@ import styled from "styled-components";
 
 export const MainGrid = styled.div`
     display: grid;
+    justify-content: center;
     align-items: baseline;
+    width: 80vw;
+    min-height: 20vh;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5vw;
+    padding: 5vh 0;
 `
 
 export const Container = styled.div`
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     border: 1px solid #000;
     border-radius: 15px;
     :hover{
-        cursor:pointer;
+        cursor: pointer;
     }
     img {
-        height: 40%;
+        width: 60%;
+        height: 60%;
     }
     .cardInfo {
-        width: 90%;
-        height: 20%;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        
+        align-items: center;
+        width: 80%;
+        height: 33%;
+        align-self: center;
+        font-size: 2vh;
     }
 `
