@@ -5,7 +5,7 @@ import {
 } from './ArtistStyle';
 import { CardArtist } from '../../components/card/Card';
 import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer'
+import Footer from '../../components/footer/Footer';
 
 export default function Artist() {
     return (

@@ -5,6 +5,7 @@ export const MainArtist = styled.div`
     margin: 0;
     color: #000;
     .card {
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
