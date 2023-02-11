@@ -18,8 +18,8 @@ export default function Router() {
                 <Route path="/album/:artistName" element={<AlbumDetail />}></Route>
 
                 <Route path="/musicas" element={<Track />}></Route>
-                <Route path="/musica/:artistName" element={<TrackDetail />}></Route>
-                <Route path="/musica/:artistName/:albumName" element={<TrackDetail />}></Route>
+                <Route path="/musica/:musicName" element={<TrackDetail />}></Route>
+                <Route path="/musica/:musicName/:albumName" element={<TrackDetail />}></Route>
                 
                 <Route path="*" element={<NotFound />}></Route>
             </Routes>

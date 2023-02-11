@@ -13,6 +13,8 @@ export default function Image({artist}) {
         <img 
             src={image || defaultImage } 
             alt={image ? artist : "Artista sem imagem"}
+            width={300}
+            height={300}
         />
     )
 }

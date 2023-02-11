@@ -16,6 +16,7 @@ export function getAlbums(setAlbums) {
     axios.get(`${BASE_URL}/2.0/?method=album.search&album=believe
                 &api_key=${API_KEY}&format=${FORMAT}&page=1`)
             .then(response => {
+                console.log(response.data.results.albummatches.album)
                 setAlbums(response.data.results.albummatches.album)
             })
 }
